@@ -1,10 +1,9 @@
 
-var React = require('react')
-var Head = require('./Head.jsx')
-var Header = require('./Header.jsx')
-var Tutorial = require('./Tutorial.jsx')
-var Issues = require('./Issues.jsx')
-var Footer = require('./Footer.jsx')
+var React = require('react');
+var Head = require('./head.jsx');
+var Header = require('./header.jsx');
+var Content = require('./content.jsx');
+var Footer = require('./footer.jsx');
 
 var Root = React.createClass({
 
@@ -17,8 +16,7 @@ var Root = React.createClass({
         <Head {...this.props} />
         <body className="p3 container">
           <Header {...this.props} />
-          <Tutorial {...this.props} />
-          <Issues {...this.props} />
+          <Content {...this.props} />
           <Footer {...this.props} />
           <script id="initial-props" type="application/json" dangerouslySetInnerHTML={initialProps} />
           <script src="bundle.js" />
@@ -27,12 +25,11 @@ var Root = React.createClass({
     )
   }
 
-})
+});
 
 function safeStringify(obj) {
-  return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
+  return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--');
 }
 
 
-module.exports = Root
-
+module.exports = Root;

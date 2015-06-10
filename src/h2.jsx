@@ -1,5 +1,5 @@
 
-var React = require('react')
+var React = require('react');
 
 var H2 = React.createClass({
 
@@ -12,12 +12,13 @@ var H2 = React.createClass({
       link: {
         color: 'inherit'
       }
-    }
+    };
 
     var id = this.props.children.toString()
       .toLowerCase()
-      .replace(/\s/g, '-')
-    id = encodeURI(id)
+      .replace(/\s/g, '-');
+
+    id = encodeURI(id);
 
     return (
       <h2 id={id} style={styles.heading}>
@@ -25,10 +26,10 @@ var H2 = React.createClass({
           {this.props.children}
         </a>
       </h2>
-    )
+    );
   }
 
-})
+});
 
-module.exports = H2
+module.exports = H2;
 
