@@ -1,5 +1,5 @@
 
-var React = require('react')
+var React = require('react');
 
 var TweetButton = React.createClass({
 
@@ -7,18 +7,20 @@ var TweetButton = React.createClass({
     var href = [
       'https://twitter.com/intent/tweet?text=',
       this.props.title,
-      '&url=http://jxnblk.com/react-icons',
-      '&via=jxnblk'
-    ].join('')
-    href = encodeURI(href)
+      ': A Tetrahedron Generator Built With ReactJS',
+      '&url=http://triangle.life/tetrahedrons',
+      '&via=winkerVSbecks'
+    ].join('');
+
+    href = encodeURI(href);
+
     return (
       <a href={href} className="btn btn-primary">
         Tweet
       </a>
-    )
+    );
   }
 
-})
+});
 
-module.exports = TweetButton
-
+module.exports = TweetButton;

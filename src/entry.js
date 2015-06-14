@@ -1,6 +1,6 @@
 
 var React = require('react');
-var Root = require('./Root.jsx');
+var Root = require('./root.jsx');
 
 if (typeof document !== 'undefined') {
 

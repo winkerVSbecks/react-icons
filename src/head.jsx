@@ -1,5 +1,5 @@
 
-var React = require('react')
+var React = require('react');
 
 var Head = React.createClass({
 
@@ -13,10 +13,9 @@ var Head = React.createClass({
         <meta name="keywords" content={this.props.keywords.map(function(keyword) { return keyword }).join(', ')} />
         <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
       </head>
-    )
+    );
   }
 
-})
+});
 
-module.exports = Head
-
+module.exports = Head;

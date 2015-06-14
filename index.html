@@ -8,7 +8,7 @@ npm i --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev<
 <span class="hljs-keyword">var</span> build = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name, props</span>) </span>{
 
   <span class="hljs-keyword">var</span> svg = React.renderToStaticMarkup(React.createElement(Cog, props))
-  
+
   fs.writeFileSync(<span class="hljs-string">'icons/'</span> + name + <span class="hljs-string">'.svg'</span>, svg)
 
 }
@@ -76,7 +76,7 @@ var build = <span class="hljs-function"><span class="hljs-keyword">function</spa
     React.renderToStaticMarkup(React.createElement(Icon, props)),
     <span class="hljs-string">'&lt;/svg&gt;'</span>
   ].</span>join(<span class="hljs-string">''</span>)
-  
+
   <span class="hljs-transposed_variable">fs.</span>writeFileSync(<span class="hljs-string">'icons/'</span> + name + <span class="hljs-string">'.svg'</span>, svg)
 
 }
@@ -138,7 +138,7 @@ npm <span class="hljs-command">run</span> watch:jsx</pre><p data-reactid=".kx7z1
 }
 </pre><p data-reactid=".kx7z1la4u8.1.1.1e"><span data-reactid=".kx7z1la4u8.1.1.1e.0">The </span><code data-reactid=".kx7z1la4u8.1.1.1e.1">rad</code><span data-reactid=".kx7z1la4u8.1.1.1e.2"> function converts degrees to radians for convenience and since the </span><code data-reactid=".kx7z1la4u8.1.1.1e.3">Math.cos</code><span data-reactid=".kx7z1la4u8.1.1.1e.4">, </span><code data-reactid=".kx7z1la4u8.1.1.1e.5">Math.sin</code><span data-reactid=".kx7z1la4u8.1.1.1e.6">, and </span><code data-reactid=".kx7z1la4u8.1.1.1e.7">Math.tan</code><span data-reactid=".kx7z1la4u8.1.1.1e.8"> functions all require radians. The </span><code data-reactid=".kx7z1la4u8.1.1.1e.9">rx</code><span data-reactid=".kx7z1la4u8.1.1.1e.a"> and </span><code data-reactid=".kx7z1la4u8.1.1.1e.b">ry</code><span data-reactid=".kx7z1la4u8.1.1.1e.c"> functions calculate the x and y coordinates respectively based on the radius and angle.</span></p><figure class="center mb3" data-reactid=".kx7z1la4u8.1.1.1f"><svg viewBox="0 0 256 256" width="256" height="256" fill="currentcolor" data-reactid=".kx7z1la4u8.1.1.1f.0"><circle cx="128" cy="128" r="126" style="fill:none;stroke:currentcolor;" data-reactid=".kx7z1la4u8.1.1.1f.0.0"></circle><path d="M 128 128 L 128 2 M 128 128 L 237.11920087683927 65" style="fill:none;stroke:currentcolor;" data-reactid=".kx7z1la4u8.1.1.1f.0.1"></path><circle cx="237.11920087683927" cy="65" r="6" style="fill:#7FDBFF;opacity:0.75;" data-reactid=".kx7z1la4u8.1.1.1f.0.2"></circle></svg><figcaption data-reactid=".kx7z1la4u8.1.1.1f.1"><span data-reactid=".kx7z1la4u8.1.1.1f.1.0">The </span><code data-reactid=".kx7z1la4u8.1.1.1f.1.1">rx</code><span data-reactid=".kx7z1la4u8.1.1.1f.1.2"> and </span><code data-reactid=".kx7z1la4u8.1.1.1f.1.3">ry</code><span data-reactid=".kx7z1la4u8.1.1.1f.1.4"> functions being used to find coordinates along a circle</span></figcaption></figure><p data-reactid=".kx7z1la4u8.1.1.1g"><span data-reactid=".kx7z1la4u8.1.1.1g.0">Start with a polygon to see how the </span><code data-reactid=".kx7z1la4u8.1.1.1g.1">teeth</code><span data-reactid=".kx7z1la4u8.1.1.1g.2"> prop can be adjusted to create different numbers of points.</span></p><pre style="white-space:pre;" data-reactid=".kx7z1la4u8.1.1.1h">
 <span class="hljs-keyword">var</span> num = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(n)</span> </span>{
-  <span class="hljs-keyword">return</span> (n &lt; <span class="hljs-number">0.0000001</span>) ? <span class="hljs-number">0</span> : n 
+  <span class="hljs-keyword">return</span> (n &lt; <span class="hljs-number">0.0000001</span>) ? <span class="hljs-number">0</span> : n
 }
 
 <span class="hljs-keyword">var</span> drawTeeth = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(n)</span> </span>{

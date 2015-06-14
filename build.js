@@ -1,7 +1,7 @@
 
 var fs = require('fs')
 var React = require('react')
-var Icon = require('./Icon')
+var Cog = require('./src/Cog')
 
 
 var build = function(name, config) {
@@ -15,10 +15,10 @@ var build = function(name, config) {
       'width="', size, '" ',
       'height="', size, '" ',
     '>',
-    React.renderToStaticMarkup(React.createElement(Icon, config)),
+    React.renderToStaticMarkup(React.createElement(Cog, config)),
     '</svg>'
   ].join('')
-  
+
   fs.writeFileSync('icons/' + name + '.svg', svg)
 
 }

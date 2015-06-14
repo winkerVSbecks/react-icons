@@ -21,11 +21,12 @@ code {
 
 .prose p {
   line-height: 1.625;
-  /*
+}
+
+.prose blockquote {
   font-family: Georgia, serif;
   margin-top: 1em;
   margin-bottom: 2em;
-  */
 }
 
 .prose p:first-child {
