@@ -1,6 +1,8 @@
-# Building SVG Icons with React
+# चतुर्पाश्वीय
 
-How to Create Mathematically-Generated Graphics Using JavaScript and React
+Tetrahedron generator built with ReactJS.
+
+A fork of Brent Jackson's Building SVG Icons with React.
 
 http://jxnblk.com/react-icons
 
